@@ -1,0 +1,84 @@
+/* ------------------------------------------------------------ *\
+	Vendor
+\* ------------------------------------------------------------ */
+
+@import 'magnific-popup/dist/magnific-popup.css';
+@import 'slick-carousel/slick/slick.css';
+/*@import 'plyr/dist/plyr.css';*/
+
+/* ------------------------------------------------------------ *\
+	Tailwind CSS
+\* ------------------------------------------------------------ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+	:root {
+/*		--nav-height: 70px;*/
+	}
+
+	html {
+		font-size: 16px;
+	}
+
+	body {
+		@apply text-black-2 leading-normal;
+/*		@apply text-xsm;*/
+		@apply lg:text-2xl lg:leading-tight;
+	}
+
+	h1 {
+/*		@apply text-2xl font-bold leading-normal;*/
+		@apply lg:text-9xl lg:leading-none;
+	}
+
+	h2 {
+/*		@apply text-lg font-bold leading-normal;*/
+		@apply lg:text-6xl lg:leading-[1.13];
+	}
+
+	h3 {
+/*		@apply text-smd font-bold leading-normal;*/
+/*		@apply md:text-md;*/
+		@apply lg:text-4xl lg:leading-[1.17];
+	}
+
+	h4 {
+/*		@apply text-smd font-bold leading-normal;*/
+		@apply lg:text-3xl lg:leading-[1.17];
+	}
+
+	h5 {
+/*		@apply text-sm font-bold leading-normal;*/
+		@apply lg:text-2xl lg:leading-tight;
+	}
+
+	h6 {
+/*		@apply text-normal font-normal leading-normal;*/
+		@apply lg:text-normal lg:leading-[1.3];
+	}
+
+	p {
+		@apply text-inherit font-normal leading-inherit;
+	}
+
+	a {
+/*		@apply text-inherit leading-inherit;*/
+	}
+
+	h1,
+	h2 {
+		@apply font-light;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-normal;
+	}
+}	
+

@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------ *\
+	.magnific-popup
+\* ------------------------------------------------------------ */
+
+.mfp-bg {
+	opacity: 0!important;
+	transition: opacity .6s;
+
+
+	&.mfp-ready {
+		opacity: 0.8!important;
+	}
+}
+
+.mfp-wrap {
+	overflow: hidden!important;
+
+	&.mfp-ready {
+		overflow: hidden auto;
+
+		.js-popup-inner {
+			transform: translateY(0);
+		}
+	}
+
+	.js-popup-inner {
+		transition: transform 1s cubic-bezier(.53,0,.3,.99);
+		transform: translateY(100vh);
+	}
+}
+
+.js-popup-close {
+	cursor: pointer;
+}
