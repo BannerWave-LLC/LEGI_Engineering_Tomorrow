@@ -2,7 +2,7 @@ import { $document } from '../utils/globals.js'
 import 'magnific-popup';
 
 $('.js-popup-modal').magnificPopup({
-	type: 'inline',
+	type: 'ajax',
 	preloader: false,
 	modal: true,
 	fixedContentPos: true,
@@ -45,6 +45,6 @@ $document.mouseup(function(e) {
 
 		setTimeout(function() {
 			$('.js-popup-modal').css('pointer-events', '');
-		}, 700);
+		}, 750);
 	}
 });

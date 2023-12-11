@@ -1,4 +1,5 @@
 import { $window, $body } from '../utils/globals.js'
+var $html = $('html');
 
 var dvh = window.innerHeight * 0.01;
 var currentDvh = window.innerHeight * 0.01;
@@ -28,6 +29,12 @@ $window.on('resize', function(event) {
 	document.documentElement.style.setProperty('--header-current-position', $('.js-header').outerHeight() + $('.js-header').position().top + 'px');
 });
 
+//Calc header- height
+$html.css('--header-current-height', Math.ceil($('.js-header').outerHeight(true)) + 'px');
+
+$window.on('resize', function(event) {
+	$html.css('--header-current-height', Math.ceil($('.js-header').outerHeight(true)) + 'px');
+});
 
 //Masonry tiles text height
 
@@ -40,9 +47,6 @@ $window.on('resize', function(event) {
 $window.on('load resize', function(event) {
 	$('.js-masonry-tiles > *').each(function(index, el) {
 		var textHeight = $(el).find('h5 + div > div').outerHeight();
-
-		console.log($(el).find('h5 + div > div'));
-		console.log(textHeight);
 
 		$(el).css('--text-height', textHeight + 'px');
 	}); 

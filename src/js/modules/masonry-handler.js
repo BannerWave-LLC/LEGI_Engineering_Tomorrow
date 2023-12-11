@@ -25,7 +25,7 @@ $window.on('load resize', function () {
 		$('.js-masonry-tiles').masonry(tilesOptions);
 	}
 
-	if ($window.width() < 1023) {
+	if ($window.width() < 1024) {
 		$('.js-masonry').masonry('destroy');
 		$('.js-masonry').css('height', '');
 	} else {

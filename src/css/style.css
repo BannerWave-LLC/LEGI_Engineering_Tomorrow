@@ -21,33 +21,38 @@
 	}
 
 	html {
-		font-size: 16px;
+		@apply text-normal;
+		@apply lg:text-md;
+		@apply xl:text-normal;
+/*		font-size: 16px;*/
 	}
 
 	body {
-		@apply text-black-2 leading-normal;
-/*		@apply text-xsm;*/
+		@apply text-xl text-black-2 leading-normal;
 		@apply lg:text-2xl lg:leading-tight;
 	}
 
 	h1 {
+		@apply text-5xl leading-[1.14];
 /*		@apply text-2xl font-bold leading-normal;*/
-		@apply lg:text-9xl lg:leading-none;
+		@apply lg:text-8xl lg:leading-none;
+		@apply xl:text-9xl;
 	}
 
 	h2 {
-/*		@apply text-lg font-bold leading-normal;*/
-		@apply lg:text-6xl lg:leading-[1.13];
+		@apply text-5xl;
+		@apply md:text-6xl lg:leading-[1.13];
 	}
 
 	h3 {
 /*		@apply text-smd font-bold leading-normal;*/
-/*		@apply md:text-md;*/
+		@apply text-3xl;
 		@apply lg:text-4xl lg:leading-[1.17];
 	}
 
 	h4 {
-/*		@apply text-smd font-bold leading-normal;*/
+		@apply text-xl;
+		@apply md:text-2xl;
 		@apply lg:text-3xl lg:leading-[1.17];
 	}
 
@@ -57,7 +62,7 @@
 	}
 
 	h6 {
-/*		@apply text-normal font-normal leading-normal;*/
+		@apply text-md font-medium leading-[1.14];
 		@apply lg:text-normal lg:leading-[1.3];
 	}
 
@@ -67,6 +72,10 @@
 
 	a {
 /*		@apply text-inherit leading-inherit;*/
+	}
+
+	strong {
+		@apply font-semibold;
 	}
 
 	h1,

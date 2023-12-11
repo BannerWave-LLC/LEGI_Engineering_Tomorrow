@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------ *\
+	.Slider styles
+\* ------------------------------------------------------------ */
+
+.js-slider-videos {
+	.slick-list {
+		overflow: visible;
+	}
+
+	.slick-dots {
+		list-style: none; 
+		display: flex;
+		justify-content: center;
+		font-size: 0;
+		margin-top: 2.06rem; 
+
+		li + li {
+			margin-left: 5px; 
+		}
+
+		li {
+			flex: 1;
+			background-color: #D9D9D9;
+			transition: background-color .6s;
+			height: 4px;
+		}
+
+		.slick-active {
+			background-color: #7D4AB8; 
+		}
+	}
+
+	.slick-track {
+	    display: flex !important;
+	}
+
+	.slick-slide {
+	    height: inherit !important;
+
+	    > div {
+	    	height: 100%;
+	    	display: flex; 
+	    }
+	}
+}
