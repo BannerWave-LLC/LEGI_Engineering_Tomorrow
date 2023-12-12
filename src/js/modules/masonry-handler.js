@@ -1,34 +1,46 @@
-import { $window, $body } from '../utils/globals.js'
+import { $window, $body } from '../utils/globals.js';
+import AOS from 'aos';
 
 var masonryOptions = {
-	columnWidth: 1,
-	itemSelector: '.js-masonry-item',
-	horizontalOrder: true,
-	percentPosition: true,
+    columnWidth: 1,
+    itemSelector: '.js-masonry-item',
+    horizontalOrder: true,
+    percentPosition: true,
 };
 
 var tilesOptions = {
-	columnWidth: 1,
-	itemSelector: '.js-masonry-tile',
-	horizontalOrder: true,
-	percentPosition: true,	
+    columnWidth: 1,
+    itemSelector: '.js-masonry-tile',
+    horizontalOrder: true,
+    percentPosition: true,
 }
 
 $window.on('load resize', function () {
-	$('.js-masonry').masonry(masonryOptions);
-	$('.js-masonry-tiles').masonry(tilesOptions);
+    var $masonryContainer = $('.js-masonry');
+    $masonryContainer.masonry(masonryOptions);
 
-	if($window.width() < 768) {
-		$('.js-masonry-tiles').masonry('destroy');
-		$('.js-masonry-tiles').css('height', '');
-	} else {
-		$('.js-masonry-tiles').masonry(tilesOptions);
-	}
+    $masonryContainer.on('layoutComplete', function (event, laidOutItems) {
+        AOS.refresh();
+    });
 
-	if ($window.width() < 1024) {
-		$('.js-masonry').masonry('destroy');
-		$('.js-masonry').css('height', '');
-	} else {
-		$('.js-masonry').masonry(masonryOptions);
-	}
-})
+    var $tilesContainer = $('.js-masonry-tiles');
+    $tilesContainer.masonry(tilesOptions);
+
+    $tilesContainer.on('layoutComplete', function (event, laidOutItems) {
+        AOS.refresh();
+    });
+
+    if ($window.width() < 768) {
+        $tilesContainer.masonry('destroy');
+        $tilesContainer.css('height', '');
+    } else {
+        $tilesContainer.masonry(tilesOptions);
+    }
+
+    if ($window.width() < 1024) {
+        $masonryContainer.masonry('destroy');
+        $masonryContainer.css('height', '');
+    } else {
+        $masonryContainer.masonry(masonryOptions);
+    }
+});

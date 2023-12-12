@@ -2,409 +2,417 @@
 <html lang="en">
 {{> head }}
 <body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern">
-	<div class="relative overflow-hidden min-h-screen pt-16.75">
-		{{> header }}
+	{{> header }}
 
-		<div class="">
-			<div class="container">
-				<div class="relative min-h-[28.13rem] flex items-center pt-[0.85rem] pb-[0.75rem] px-[3.6rem] rounded-lg text-white shadow-2xl z-1 after:absolute after:top-0 after:-bottom-[1px] after:left-0 after:right-0 after:content-[''] after:rounded-lg after:bg-banner-gradient after:opacity-[0.95] after:transform after:scale-x-[-1] after:-z-1">
-					<div class="absolute top-0 left-0 w-full h-full pointer-events-none -z-1 js-media">
-						<!-- <div class="js-media-wrapper" data-autoplay="true" data-background="true">
-							<video class="js-media-video" playsinline>
-								<source src="assets/videos/placeholder.mp4" type="video/mp4" />
-							</video>
-						
-							<div class="js-media-video" data-plyr-provider="vimeo" data-plyr-embed-id="100902001"></div>
-						
-							<div class="js-media-video" data-plyr-provider="youtube" data-plyr-embed-id="MLpWrANjFbI"></div>
-						</div> -->
+	<div class="">
+		<div class="container p-0 lg:px-[25px]">
+			<div class="relative min-h-[26.53rem] lg:min-h-[28.13rem] flex items-center pt-[14.15rem] lg:pt-[1.85rem] pb-[2.25rem] lg:pb-[0.75rem] px-[25px] lg:px-[3.6rem] lg:rounded-lg text-white shadow-2xl z-1 after:absolute after:top-0 after:-bottom-[1px] after:left-0 after:right-0 after:content-[''] lg:after:rounded-lg after:bg-banner-gradient after:opacity-[0.95] after:transform after:scale-x-[-1] after:-z-1">
+				<div class="absolute top-0 left-0 w-full h-full pointer-events-none -z-1 js-media">
+					<!-- <div class="js-media-wrapper" data-autoplay="true" data-background="true">
+						<video class="js-media-video" playsinline>
+							<source src="assets/videos/placeholder.mp4" type="video/mp4" />
+						</video>
+					
+						<div class="js-media-video" data-plyr-provider="vimeo" data-plyr-embed-id="100902001"></div>
+					
+						<div class="js-media-video" data-plyr-provider="youtube" data-plyr-embed-id="MLpWrANjFbI"></div>
+					</div> -->
 
-						<picture class="js-media-cover">
-							<img src="assets/images/temp/banner-9.jpg" alt="">
-						</picture>
-					</div>
+					<picture class="js-media-cover">
+						<img src="assets/images/temp/banner-9.jpg" alt="">
+					</picture>
+				</div>
 
-					<div class="relative max-w-1/2">
-						<div class="mb-[2.05rem] last:mb-0">
-							<h2 class="font-light mb-[1.3rem]">Read about our work</h2>
+				<div class="relative lg:max-w-1/2" data-aos="fade-up">
+					<div class="mb-4 lg:mb-[2.05rem] last:mb-0">
+						<h2 class="font-light mb-[0.8rem] lg:mb-[1.3rem] leading-[1.14] lg:leading-[1.13]">Read about our work</h2>
 
-							<div class="max-w-[29.38rem]">
-								<p>Engineering Tomorrow is making waves around the world. See what others have to say.</p>
-							</div>
+						<div class="max-w-[29.38rem]">
+							<p>Engineering Tomorrow is making waves around the world. See what others have to say.</p>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="bg-gray-3-50 p-5 rounded-b-lg overflow-hidden">
-					<ul class="flex justify-center items-center -m-2.5">
-						<li class="p-2.5">
-							<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn is-checked" data-filter="*">
-								<span class="relative z-1">All</span>
-							</button>
-						</li>
-						
-						<li class="p-2.5">
-							<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2023">
-								<span class="relative z-1">2023</span>
-							</button>
-						</li>
-						
-						<li class="p-2.5">
-							<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2022">
-								<span class="relative z-1">2022</span>
-							</button>
-						</li>
-						
-						<li class="p-2.5">
-							<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2021">
-								<span class="relative z-1">2021</span>
-							</button>
-						</li>
+			<div class="bg-gray-3 lg:bg-gray-3-50 p-5 px-[1.2rem] lg:px-5 lg:rounded-b-lg overflow-hidden relative after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] after:pointer-events-none after:bg-filter-gradient lg:after:hidden" data-aos="fade-up">
+				<ul class="flex md:justify-center items-center -m-2.5 overflow-y-auto">
+					<li class="p-2.5">
+						<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase whitespace-nowrap font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn is-checked" data-filter="*">
+							<span class="relative z-1">All</span>
+						</button>
+					</li>
+					
+					<li class="p-2.5">
+						<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase whitespace-nowrap font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2023">
+							<span class="relative z-1">2023</span>
+						</button>
+					</li>
+					
+					<li class="p-2.5">
+						<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase whitespace-nowrap font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2022">
+							<span class="relative z-1">2022</span>
+						</button>
+					</li>
+					
+					<li class="p-2.5">
+						<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase whitespace-nowrap font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2021">
+							<span class="relative z-1">2021</span>
+						</button>
+					</li>
 
-						<li class="p-2.5">
-							<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2020">
-								<span class="relative z-1">2020</span>
-							</button>
-						</li>
+					<li class="p-2.5">
+						<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase whitespace-nowrap font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-2020">
+							<span class="relative z-1">2020</span>
+						</button>
+					</li>
 
-						<li class="p-2.5">
-							<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-pre-2020">
-								<span class="relative z-1">PRE-2020</span>
-							</button>
-						</li>
-					</ul>
-				</div>
+					<li class="p-2.5">
+						<button class="relative inline-block align-middle p-3.75 bg-transparent border border-purple border-solid shadow-xs rounded uppercase whitespace-nowrap font-mono font-medium text-normal text-black-2 tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:border-black-2 hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0 js-isotope-btn" data-filter=".year-pre-2020">
+							<span class="relative z-1">PRE-2020</span>
+						</button>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</div>
 
-		<section class="pt-[5.59rem]">
-			<div class="container max-w-[80.63rem]">
-				<div class="flex flex-wrap -mx-2.5 -my-[1.38rem] js-isotope-grid">
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2023">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-7.jpg" alt="">
-							</picture>
+	<section class="pt-[2.69rem] lg:pt-[5.59rem] pb-[3.06rem] lg:pb-[5.38rem] ">
+		<div class="container max-w-[80.63rem]">
+			<div class="flex flex-wrap -mx-2.5 -my-4 lg:-my-[1.38rem] js-isotope-grid">
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2023">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-7.jpg" alt="">
+						</picture>
 
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2023</span>
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2023</span>
 
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									STEM Learning Beyond <br>the Classroom
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								STEM Learning Beyond <br>the Classroom
 
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
 
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2022">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-6.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2022</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Favour Nerrise: Strengthening the Number of Black Engineering Students and Professionals
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2021">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-5.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2021</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Engineering Conference
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2020">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-4.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2020</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Trouble Getting Students Interested in STEM? These Teachers Figured It Out
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2023">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-7.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2023</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									STEM Learning Beyond <br>the Classroom
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2022">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-6.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2022</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Favour Nerrise: Strengthening the Number of Black Engineering Students and Professionals
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2021">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-5.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2021</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Engineering Conference
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2020">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-4.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2020</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Trouble Getting Students Interested in STEM? These Teachers Figured It Out
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2023">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-7.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2023</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									STEM Learning Beyond <br>the Classroom
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2022">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-6.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2022</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Favour Nerrise: Strengthening the Number of Black Engineering Students and Professionals
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-2021">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-5.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2021</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Engineering Conference
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
-
-					<div class="basis-1/4 max-w-1/4 px-2.5 py-[1.38rem] js-isotope-card year-pre-2020">
-						<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-md space-y-[1.79rem] group/card">
-							<picture class="relative block w-full pb-[71.4%] rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
-								<img class="absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-4.jpg" alt="">
-							</picture>
-
-							<div class="space-y-[0.65rem]">
-								<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2019</span>
-
-								<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
-									Trouble Getting Students Interested in STEM? These Teachers Figured It Out
-
-									<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-									</svg>
-								</h6>
-
-								<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
-							</div>
-						</a>
-					</div>
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
 				</div>
-			</div>
-		</section>
 
-		<section class="py-[3.75rem]">
-			<div class="container">
-				<div class="text-center space-y-8">
-					<h3>Ready to inspire a passion <br>for engineering in your students?</h3>
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2022">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-6.jpg" alt="">
+						</picture>
 
-					<a href="#" class="relative inline-block align-middle p-3.75 bg-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-normal text-white tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0">
-						<span class="relative z-1">Schedule a Lab</span>
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2022</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Favour Nerrise: Strengthening the Number of Black Engineering Students and Professionals
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2021">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-5.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2021</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Engineering Conference
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2020">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-4.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2020</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Trouble Getting Students Interested in STEM? These Teachers Figured It Out
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2023">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-7.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2023</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								STEM Learning Beyond <br>the Classroom
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2022">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-6.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2022</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Favour Nerrise: Strengthening the Number of Black Engineering Students and Professionals
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2021">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-5.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2021</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Engineering Conference
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2020">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-4.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2020</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Trouble Getting Students Interested in STEM? These Teachers Figured It Out
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2023">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-7.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2023</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								STEM Learning Beyond <br>the Classroom
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2022">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-6.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2022</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Favour Nerrise: Strengthening the Number of Black Engineering Students and Professionals
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-2021">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-5.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2021</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Engineering Conference
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="basis-full max-w-full md:basis-1/2 md:max-w-1/2 lg:basis-1/4 lg:max-w-1/4 px-2.5 py-4 lg:py-[1.38rem] js-isotope-card year-pre-2020">
+					<a href="#" class="inline-block w-full text-[1.19rem] text-black leading-[1.26] lg:leading-md space-y-[1.19rem] lg:space-y-[1.79rem] group/card" data-aos="fade-up">
+						<picture class="relative block max-w-[10.3rem] md:max-w-[15rem] lg:max-w-none w-full lg:pb-[71.4%] rounded lg:rounded-lg overflow-hidden transition-shadow duration-500 group-hover/card:shadow-lg">
+							<img class="lg:absolute top-0 left-0 w-full h-full object-cover" src="assets/images/temp/tile-4.jpg" alt="">
+						</picture>
+
+						<div class="space-y-[0.65rem]">
+							<span class="font-mono font-bold text-[0.94rem] text-purple tracking-wider uppercase">October 14, 2019</span>
+
+							<h6 class="items-center font-semibold text-[1.19rem] text-black-2 transition-background duration-500 pr-3 group-hover/card:text-purple">
+								Trouble Getting Students Interested in STEM? These Teachers Figured It Out
+
+								<svg class="relative inline-block transition-link-arrow opacity-0 duration-500 ml-1 right-[3px] -top-[2px] group-hover/card:right-0 group-hover/card:opacity-100" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+								</svg>
+							</h6>
+
+							<p>When the world is facing grand challenges of health, food, energy, and water, companies worldwide need engineers who can work collaboratively and solve problems. </p>
+						</div>
 					</a>
 				</div>
 			</div>
-		</section>
 
-		<section class="pt-[0.88rem]">
-			<div class="flex border-t border-solid border-purple">
-				<div class="flex-1/2 max-w-1/2 border-r border-solid border-purple">
-					<div class="flex items-center justify-center min-h-full space-x-2.5 py-[4.59rem] max-w-[32.5rem] mx-auto">
-						<picture class="max-w-[7.5rem]">
-							<img src="assets/images/temp/ico-heart.svg" alt="">
-						</picture>
+			<div class="mt-[3.63rem] lg:mt-[5.5rem] flex justify-center" data-aos="fade-up">
+				<a href="#" class="lg:inline-flex items-center font-semibold text-lg lg:text-xl text-purple leading-md lg:leading-lg transtion-opacity duration-500 lg:hover:opacity-60 group/link"> 
+					Load more
 
-						<div>
-							<h4>Unlock opportunities for kids all over the country.</h4>
+					<svg width="10" height="10" class="relative inline-block transition-link-arrow duration-500 lg:ml-2 lg:right-[3px] lg:top-[2px]" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.56 3.728L3.84 6.32C3.97867 6.42667 4.112 6.54933 4.24 6.688C4.37867 6.82667 4.48533 6.944 4.56 7.04H4.704C4.69333 6.90133 4.67733 6.72533 4.656 6.512C4.64533 6.29867 4.64 6.10133 4.64 5.92V0.64L5.92 0.64V5.92C5.92 6.10133 5.90933 6.29867 5.888 6.512C5.87733 6.72533 5.86133 6.90133 5.84 7.04H5.984C6.048 6.96533 6.14933 6.85867 6.288 6.72C6.42667 6.592 6.576 6.45867 6.736 6.32L10 3.728V5.408L5.28 9.12L0.56 5.424V3.728Z" fill="currentColor"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
 
-							<a href="#" class="inline-flex items-center font-semibold text-xl text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
-								Donate to Engineering Tomorrow now
-									
-								<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="flex-1/2 max-w-1/2">
-					<div class="flex items-center justify-center min-h-full space-x-2.5 py-[4.59rem] max-w-[32.5rem] mx-auto">
-						<picture class="max-w-[7.5rem]">
-							<img src="assets/images/temp/ico-chat.svg" alt="">
-						</picture>
+	<section class="pt-[2.45rem] pb-[1.65rem] lg:py-[3.75rem] border-t border-solid border-purple">
+		<div class="container">
+			<div class="text-center space-y-6 lg:space-y-8" data-aos="fade-up">
+				<h4 class="text-2xl lg:text-3xl">Ready to inspire a passion <br>for engineering in your students?</h4>
 
-						<div>
-							<h4>Want to help us inspire <br>students in STEM?</h4>
+				<a href="#" class="relative inline-block align-middle p-[0.8375rem] lg:p-3.75 bg-purple border-solid shadow-xs rounded uppercase font-mono font-medium text-md lg:text-normal text-white tracking-wider overflow-hidden duration-500 after:absolute after:top-0 after:left-0 after:w-0 after:h-0 after:content-[''] after:rounded-br-[250%] after:bg-black-2 after:[transition:height_.4s,border-radius_.4s,width_.3s] hover:text-white hover:after:w-full hover:after:h-[347.7%] hover:after:rounded-br-0">
+					<span class="relative z-1">Schedule a Lab</span>
+				</a>
+			</div>
+		</div>
+	</section>
 
-							<a href="#" class="inline-flex items-center font-semibold text-xl text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
-								Find out how to get involved
-									
-								<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
-								</svg>
-							</a>
-						</div>
+	<section class="pt-[0.88rem]">
+		<div class="lg:flex lg:border-t border-solid border-purple">
+			<div class="lg:flex-1/2 lg:max-w-1/2 border-t lg:border-t-0 lg:border-r border-solid border-purple" data-aos="fade-up">
+				<div class="flex lg:items-center justify-between lg:justify-center min-h-full space-x-2.5 py-[2.19rem] lg:py-[4.59rem] px-[1.6rem] lg:px-0 max-w-[32.5rem] mx-auto">
+					<picture class="w-[4.69rem] lg:w-auto lg:max-w-[7.5rem]">
+						<img src="assets/images/temp/ico-heart.svg" alt="">
+					</picture>
+
+					<div class="flex-1 lg:flex-unset">
+						<h4 class="text-2xl lg:text-3xl mb-2 lg:mb-0">Unlock opportunities for kids all over the country.</h4>
+
+						<a href="#" class="lg:inline-flex items-center font-semibold text-lg lg:text-xl text-purple leading-md lg:leading-lg transtion-opacity duration-500 lg:hover:opacity-60 group/link">
+							Donate to Engineering Tomorrow now
+								
+							<svg class="relative inline-block transition-link-arrow duration-500 lg:ml-2 lg:right-[3px] -top-[2px] lg:top-0 lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</div>
-		</section>
+			
+			<div class="lg:flex-1/2 lg:max-w-1/2 border-solid border-t lg:border-t-0" data-aos="fade-up">
+				<div class="flex lg:items-center justify-between lg:justify-center min-h-full space-x-2.5 py-[2.19rem] lg:py-[4.59rem] px-[1.6rem] lg:px-0 max-w-[32.5rem] mx-auto">
+					<picture class="w-[4.69rem] lg:w-auto lg:max-w-[7.5rem]">
+						<img src="assets/images/temp/ico-chat.svg" alt="">
+					</picture>
 
-		{{> footer }}
-	</div>
+					<div class="flex-1 lg:flex-unset">
+						<h4 class="text-2xl lg:text-3xl mb-2 lg:mb-0">Want to help us inspire <br>students in STEM?</h4>
+
+						<a href="#" class="lg:inline-flex items-center font-semibold text-lg lg:text-xl text-purple leading-md lg:leading-lg transtion-opacity duration-500 lg:hover:opacity-60 group/link">
+							Find out how to get involved
+								
+							<svg class="relative inline-block transition-link-arrow duration-500 lg:ml-2 lg:right-[3px] -top-[2px] lg:top-0 lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{{> footer }}
 
 	{{> scripts }}
 </body>

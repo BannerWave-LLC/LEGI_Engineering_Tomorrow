@@ -23,10 +23,11 @@ export default {
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
-			'white': '#ffffff',
-			'black': '#000000',
+			'white': '#fff',
+			'black': '#000',
 			'purple' : '#7D4AB8',
 			'purple-85' : 'rgba(125, 74, 184, 0.85)',
+			'purple-10' : 'rgba(177, 148, 211, 0.10)',
 			'black-2': '#090D59',
 			'blue' : '#00C7CC',
 			'gray-40': 'rgba(217, 217, 217, 0.40)',
@@ -35,6 +36,9 @@ export default {
 			'gray-2' : '#BBB',
 			'gray-3' : '#E7E7E7',
 			'gray-3-50' : 'rgba(231, 231, 231, .5)',
+			'gray-4-50' : 'rgba(176, 176, 176, .5)',
+			'gray-5' : '#B3B3B3',
+			'gray-6' : '#B0B0B0',
 		},
 		fontFamily: {
 			sans: ['Commissioner', 'sans-serif'],
@@ -42,6 +46,7 @@ export default {
 		},
 		fontSize: {
 			"9xl": "5.44rem",
+			"8xl": "4.44rem",
 			"6xl": "3rem",
 			"5xl": "2.63rem",
 			"4xl": "2.25rem",
@@ -84,6 +89,7 @@ export default {
 				'16.75' : '4.4rem',
 				'18': '4.375rem', //70px
 				'24.5': '6.25rem', //100px
+				'full': '100%', //100%
 			},
 			borderRadius: {
 				'0' : '0',
@@ -91,7 +97,7 @@ export default {
 				'3/4' : '75%',
 				'150' : '150%',
 				'lg' : '10px',
-
+				'sm' : '4px',
 			},
 			spacing: {
 				'3.75': '0.9375rem',
@@ -129,6 +135,7 @@ export default {
 				'link-arrow': 'top, right, opacity, left',
 				'submenu': 'top, opacity',
 				'tile': 'bottom, opacity, box-shadow, border, height, margin, padding, transform',
+				'shadow': 'box-shadow, drop-shadow'
 			},
 			boxShadow: {
 				'xs': '0px 2px 2px 0px rgba(0, 0, 0, 0.25)',
@@ -141,14 +148,16 @@ export default {
 				'lg': '0px 10px 30px rgba(0, 0, 0, 0.25)',
 			},
 			backgroundImage: {
-        'page-pattern': "url('assets/images/temp/bg-dot.png')",
+        'page-pattern': "url('../assets/images/temp/bg-dot.png')",
         'shadow-gradient': "linear-gradient(122deg, rgba(13, 13, 89, 0.00) 34.69%, #0D0D59 64.88%)",
         'purple-gradient': "linear-gradient(93deg, #643B93 53.43%, rgba(164, 120, 215, 0.00) 88.69%)",
         'submenu-gradient': "linear-gradient(203deg, rgba(125, 74, 184, 0.10) 29.77%, #7D4AB8 67.41%, #0D0D59 97.82%)",
-        'checklist-icon': 'url(assets/images/temp/ico-check.svg)',
+        'checklist-icon': 'url(../assets/images/temp/ico-check.svg)',
         'tile-gradient': 'linear-gradient(188deg, rgba(164, 120, 215, 0.00) 27.69%, rgba(17, 8, 64, 0.90) 85.61%)',
         'banner-gradient': 'linear-gradient(113deg, rgba(125, 74, 184, 0.10) 43.11%, #7D4AB8 65.51%, #0D0D59 97.99%)',
         'banner-gradient-purple': 'linear-gradient(112deg, rgba(125, 74, 184, 0.00) 27.29%, #7D4AB8 61.13%);',
+        'article-gradient': 'linear-gradient(292deg, #7D4AB8 15.12%, #0D0D59 88.13%);',
+        'filter-gradient': 'linear-gradient(90deg, #D9D9D9 3.65%, rgba(217, 217, 217, 0.00) 19.79%, rgba(217, 217, 217, 0.00) 75.52%, #D9D9D9 97.4%);',
       },
       letterSpacing: {
       	wide: '0.02em',

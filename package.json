@@ -24,6 +24,8 @@
     "vite-plugin-watch-and-run": "^1.1.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "isotope-layout": "^3.0.6",
     "magnific-popup": "^1.1.0",
     "masonry-layout": "^4.2.2",
     "slick-carousel": "^1.8.1"

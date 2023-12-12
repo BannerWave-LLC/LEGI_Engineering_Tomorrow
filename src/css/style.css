@@ -4,6 +4,7 @@
 
 @import 'magnific-popup/dist/magnific-popup.css';
 @import 'slick-carousel/slick/slick.css';
+@import 'aos/dist/aos.css';
 /*@import 'plyr/dist/plyr.css';*/
 
 /* ------------------------------------------------------------ *\
@@ -28,7 +29,7 @@
 	}
 
 	body {
-		@apply text-xl text-black-2 leading-normal;
+		@apply text-xl text-black-2 leading-normal antialiased;
 		@apply lg:text-2xl lg:leading-tight;
 	}
 

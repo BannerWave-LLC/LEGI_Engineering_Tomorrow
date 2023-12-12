@@ -1,4 +1,6 @@
- $('input[name=referral]').change(function () {
+import AOS from 'aos';
+
+$('input[name=referral]').change(function () {
 	const isVisible = Boolean(parseInt($(this).prop('value')));
 
 	$('.js-referrer-display').css('display', isVisible ? 'block' : 'none');
@@ -43,9 +45,13 @@ $('.js-form-procceed').on('click', function(event) {
 
 	$currentSection
 		.removeClass('is-current')
+		.addClass('is-past')
+		.next()
 		.addClass('is-past');
 
-	$currentSection.next().removeClass('is-past').addClass('is-current');
+	$currentSection.next().addClass('is-current');
+
+	AOS.refresh();
 });
 
 $('.js-form-edit').on('click', function(event) {
@@ -54,11 +60,13 @@ $('.js-form-edit').on('click', function(event) {
 	const $this = $(this);
 	const $currentSection = $this.closest('[data-order]');
 
-	$currentSection
-		.removeClass('is-past')
-		.addClass('is-current')
-			.siblings()
-			.removeClass('is-current');
+	$currentSection.siblings().removeClass('is-current');
+
+	$currentSection.addClass('is-current')
+			.prev()
+			.addClass('is-past', $currentSection.data('order') !== '1')
+
+	AOS.refresh();
 });
 
 
