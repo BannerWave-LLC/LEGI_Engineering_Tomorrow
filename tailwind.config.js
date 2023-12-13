@@ -65,6 +65,7 @@ export default {
 				'md' : '1.17',
 				'lg' : '1.3',
 				'normal': '1.25',
+				'tight' : '1.2',
 			},
 			blur: {
 				sm: '5px',
