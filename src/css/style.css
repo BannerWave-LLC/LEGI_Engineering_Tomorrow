@@ -29,7 +29,7 @@
 	}
 
 	body {
-		@apply text-xl text-black-2 leading-normal antialiased;
+		@apply text-xl text-black-2 leading-normal font-normal antialiased;
 		@apply lg:text-2xl lg:leading-tight;
 	}
 
@@ -68,7 +68,7 @@
 	}
 
 	p {
-		@apply text-inherit font-normal leading-inherit;
+		@apply text-inherit leading-inherit;
 	}
 
 	a {

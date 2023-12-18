@@ -149,11 +149,12 @@ export default {
 				'lg': '0px 10px 30px rgba(0, 0, 0, 0.25)',
 			},
 			backgroundImage: {
-        'page-pattern': "url('../assets/images/temp/bg-dot.png')",
+        'page-pattern': "url('../assets/images/temp/bg-dot-one.png')",
         'shadow-gradient': "linear-gradient(122deg, rgba(13, 13, 89, 0.00) 34.69%, #0D0D59 64.88%)",
         'purple-gradient': "linear-gradient(93deg, #643B93 53.43%, rgba(164, 120, 215, 0.00) 88.69%)",
         'submenu-gradient': "linear-gradient(203deg, rgba(125, 74, 184, 0.10) 29.77%, #7D4AB8 67.41%, #0D0D59 97.82%)",
         'checklist-icon': 'url(../assets/images/temp/ico-check.svg)',
+        'checklist-icon-dark': 'url(../assets/images/temp/ico-check-dark.svg)',
         'tile-gradient': 'linear-gradient(188deg, rgba(164, 120, 215, 0.00) 27.69%, rgba(17, 8, 64, 0.90) 85.61%)',
         'banner-gradient': 'linear-gradient(113deg, rgba(125, 74, 184, 0.10) 43.11%, #7D4AB8 65.51%, #0D0D59 97.99%)',
         'banner-gradient-purple': 'linear-gradient(112deg, rgba(125, 74, 184, 0.00) 27.29%, #7D4AB8 61.13%);',
