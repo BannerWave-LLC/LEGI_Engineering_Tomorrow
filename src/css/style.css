@@ -48,13 +48,13 @@
 	h3 {
 /*		@apply text-smd font-bold leading-normal;*/
 		@apply text-3xl;
-		@apply lg:text-4xl lg:leading-[1.17];
+		@apply lg:text-4xl lg:leading-md;
 	}
 
 	h4 {
 		@apply text-xl;
 		@apply md:text-2xl;
-		@apply lg:text-3xl lg:leading-[1.17];
+		@apply lg:text-3xl lg:leading-md;
 	}
 
 	h5 {
