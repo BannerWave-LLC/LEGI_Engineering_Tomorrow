@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
 	{{> header }}
 
 	<div class="">
@@ -259,13 +259,13 @@
 					</div>
 
 					<div class="text-lg lg:text-xl space-y-[0.56rem]">
-						<h5 class="text-xl text-purple font-semibold">Lab Intro Videos</h5>
+						<a href="#" class="text-xl text-purple font-semibold transition-opacity opacity-80 duration-500 hover:opacity-100">Lab Intro Videos</a>
 
 						<p>Get our engineer’s introduction to the lab topic and learn more about the lab activity.</p>
 
 						<ul class="space-y-1 lg:space-y-0">
 							<li>
-								<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
+								<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg opacity-80 transtion-opacity duration-500 hover:opacity-100 group/link">
 									Watch Lab Intro Video (49:06)
 										
 									<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -275,7 +275,7 @@
 							</li>
 							
 							<li>
-								<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
+								<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg opacity-80 transtion-opacity duration-500 hover:opacity-100 group/link">
 									Watch Lab extension (10:34)
 										
 									<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -291,17 +291,17 @@
 					<div class="space-y-[2.81rem]">
 						<a href="#" class="flex max-w-full text-lg lg:text-xl group/thumb">
 							<div class="basis-[30.5%] lg:basis-[13.13rem] max-w-[30.5%] lg:max-w-[13.13rem] mr-[0.96rem] lg:mr-[1.56rem]">
-								<picture class="block w-full lg:w-[13.13rem] rounded-lg shadow-lg overflow-hidden transition-opacity duration-500 group-hover/thumb:opacity-60">
+								<picture class="block w-full lg:w-[13.13rem] rounded-lg shadow-lg overflow-hidden">
 									<img src="assets/images/temp/guide-1.jpg" alt="">
 								</picture>
 							</div>
 							
 							<div class="flex-1 leading-md lg:leading-lg space-y-[0.725rem] lg:space-y-2.5">
-								<h5 class="text-xl font-semibold text-purple transition-opacity duration-500 group-hover/thumb:opacity-60">Teacher Guide</h5>
+								<h5 class="text-xl font-semibold text-purple transition-opacity opacity-80 duration-500 group-hover/thumb:opacity-100">Teacher Guide</h5>
 
 								<p>Download the teacher guide to prepare for the lab and get access to pre-work, instructions and troubleshooting advice.</p>
 
-								<span href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 group-hover/thumb:opacity-60 group/link">
+								<span href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity opacity-80 duration-500 group-hover/thumb:opacity-100 group/link">
 									Download
 										
 									<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/thumb:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -313,17 +313,17 @@
 
 						<a href="#" class="flex max-w-full text-lg lg:text-xl group/thumb">
 							<div class="basis-[30.5%] lg:basis-[13.13rem] max-w-[30.5%] lg:max-w-[13.13rem] mr-[0.96rem] lg:mr-[1.56rem]">
-								<picture class="block w-full lg:w-[13.13rem] rounded-lg shadow-lg overflow-hidden transition-opacity duration-500 group-hover/thumb:opacity-60">
+								<picture class="block w-full lg:w-[13.13rem] rounded-lg shadow-lg overflow-hidden">
 									<img src="assets/images/temp/guide-2.jpg" alt="">
 								</picture>
 							</div>
 							
 							<div class="flex-1 leading-md lg:leading-lg space-y-[0.725rem] lg:space-y-2.5">
-								<h5 class="text-xl font-semibold text-purple transition-opacity duration-500 group-hover/thumb:opacity-60">Student Workbook</h5>
+								<h5 class="text-xl font-semibold text-purple transition-opacity opacity-80 duration-500 group-hover/thumb:opacity-100">Student Workbook</h5>
 
 								<p>Access the interactive student workbook that includes questions and assessments throughout the lab presentation.</p>
 
-								<span href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 group-hover/thumb:opacity-60 group/link">
+								<span href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity opacity-80 duration-500 group-hover/thumb:opacity-100 group/link">
 									Download
 										
 									<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/thumb:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,17 +335,17 @@
 
 						<a href="#" class="flex max-w-full text-lg lg:text-xl group/thumb">
 							<div class="basis-[30.5%] lg:basis-[13.13rem] max-w-[30.5%] lg:max-w-[13.13rem] mr-[0.96rem] lg:mr-[1.56rem]">
-								<picture class="block w-full lg:w-[13.13rem] rounded-lg shadow-lg overflow-hidden transition-opacity duration-500 group-hover/thumb:opacity-60">
+								<picture class="block w-full lg:w-[13.13rem] rounded-lg shadow-lg overflow-hidden">
 									<img src="assets/images/temp/guide-3.jpg" alt="">
 								</picture>
 							</div>
 							
 							<div class="flex-1 leading-md lg:leading-lg space-y-[0.725rem] lg:space-y-2.5">
-								<h5 class="text-xl font-semibold text-purple transition-opacity duration-500 group-hover/thumb:opacity-60">Engineer’s Presentation </h5>
+								<h5 class="text-xl font-semibold text-purple transition-opacity opacity-80 duration-500 group-hover/thumb:opacity-100">Engineer’s Presentation </h5>
 
 								<p>Preview the full lab presentation and save the link so you’re ready to share the presentation on lab day.</p>
 
-								<span href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 group-hover/thumb:opacity-60 group/link">
+								<span href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity opacity-80 duration-500 group-hover/thumb:opacity-100 group/link">
 									Download
 										
 									<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/thumb:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,7 +388,7 @@
 
 					<ul class="flex flex-wrap space-x-[1.56rem]">
 						<li>
-							<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
+							<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg opacity-80 transtion-opacity duration-500 hover:opacity-100 group/link">
 								Read more
 									
 								<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -398,7 +398,7 @@
 						</li>
 						
 						<li>
-							<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
+							<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg opacity-80 transtion-opacity duration-500 hover:opacity-100 group/link">
 								See our full team
 									
 								<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -445,7 +445,7 @@
 						
 						<p>Every Engineering Tomorrow Lab Day event ends with an inspiring keynote from an engineering expert. Watch this one from the latest 3D Printing Lab Day.</p>
 
-						<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg transtion-opacity duration-500 hover:opacity-60 group/link">
+						<a href="#" class="inline-flex items-center font-semibold text-lg text-purple leading-lg opacity-80 transtion-opacity duration-500 hover:opacity-100 group/link">
 							Watch now
 								
 							<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">

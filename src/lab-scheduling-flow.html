@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
 	{{> header }}
 
 	<section class="pb-[3.93rem]">
@@ -19,7 +19,7 @@
 
 								<p>Have any questions before you select labs?</p>
 
-								<a href="#" class="inline-flex items-center font-semibold text-[1.19rem] text-purple leading-md transtion-opacity duration-500 hover:opacity-60 group/link">
+								<a href="#" class="inline-flex items-center font-semibold text-[1.19rem] text-purple leading-md opacity-80 transtion-opacity duration-500 hover:opacity-100 group/link">
 									Talk with Engineering Tomorrow
 										
 									<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -39,6 +39,7 @@ export default {
 			'gray-4-50' : 'rgba(176, 176, 176, .5)',
 			'gray-5' : '#B3B3B3',
 			'gray-6' : '#B0B0B0',
+			'gray-7' : '#F6F6F6',
 		},
 		fontFamily: {
 			sans: ['Commissioner', 'sans-serif'],
@@ -149,7 +150,7 @@ export default {
 				'lg': '0px 10px 30px rgba(0, 0, 0, 0.25)',
 			},
 			backgroundImage: {
-        'page-pattern': "url('../assets/images/temp/bg-dot-one.png')",
+        'page-pattern': "url('../assets/images/temp/bg-dot-xs.png')",
         'shadow-gradient': "linear-gradient(122deg, rgba(13, 13, 89, 0.00) 34.69%, #0D0D59 64.88%)",
         'purple-gradient': "linear-gradient(93deg, #643B93 53.43%, rgba(164, 120, 215, 0.00) 88.69%)",
         'submenu-gradient': "linear-gradient(203deg, rgba(125, 74, 184, 0.10) 29.77%, #7D4AB8 67.41%, #0D0D59 97.82%)",

@@ -18,6 +18,11 @@ $window.on('resize', function(event) {
 		document.documentElement.style.setProperty('--dvh', `${dvh}px`);
 		dvw = $body.innerWidth();
 		document.documentElement.style.setProperty('--dvw', `${dvw}px`);
+
+		$body.removeClass('nav-open');
+		$('.js-header').removeClass('is-open');
+		$('.js-header nav').css('height', ``);
+		$('.menu-open').removeClass('menu-open');
 	}
 });
 
