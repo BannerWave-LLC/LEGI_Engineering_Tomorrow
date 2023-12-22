@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
 	{{> header }}
 
 	<div class="">

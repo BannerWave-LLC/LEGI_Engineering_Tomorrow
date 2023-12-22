@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
+	
 	{{> header }}
 
 	<div class="">
@@ -91,20 +93,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
-										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -117,30 +119,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -185,20 +187,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -211,30 +213,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -279,20 +281,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -305,30 +307,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -373,20 +375,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -399,30 +401,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -467,20 +469,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -493,30 +495,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -561,20 +563,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -587,30 +589,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -655,20 +657,20 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Intro Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Lab Keynote Video
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
@@ -681,30 +683,30 @@
 
 								<ul class="space-y-2">
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Teacher Guide
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Student Workbook
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="inline-flex items-center opacity-80 transition-opacity duration-500 hover:opacity-100 group/link">
+										<a href="#" class="flex lg:inline-flex items-center underline-offset-2 border-t border-solid border-black-2 lg:border-0 py-2 lg:p-0 lg:hover:underline group/link">
 											Engineer’s Presentation
 										
-											<svg class="relative transition-link-arrow duration-500 ml-2 right-[3px] lg:group-hover/link:right-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="relative basis-[10px] min-w-[10px] hidden lg:block top-2 opacity-0 transition-link-arrow duration-500 ml-[5px] group-hover/link:opacity-100 group-hover/link:top-0" width="10" height="12" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M3.728 9.94L6.32 6.66C6.42667 6.52133 6.54933 6.388 6.688 6.26C6.82667 6.12133 6.944 6.01467 7.04 5.94V5.796C6.90133 5.80667 6.72533 5.82267 6.512 5.844C6.29867 5.85467 6.10133 5.86 5.92 5.86H0.64V4.58H5.92C6.10133 4.58 6.29867 4.59067 6.512 4.612C6.72533 4.62267 6.90133 4.63867 7.04 4.66V4.516C6.96533 4.452 6.85867 4.35067 6.72 4.212C6.592 4.07333 6.45867 3.924 6.32 3.764L3.728 0.5H5.408L9.12 5.22L5.424 9.94H3.728Z" fill="currentColor"/>
 											</svg>
 										</a>

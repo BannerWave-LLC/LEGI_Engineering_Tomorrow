@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
 	{{> header }}
 	
 	<div class="">
@@ -41,7 +42,7 @@
 			<div class="flex flex-wrap">
 				<div class="basis-full lg:basis-[44.3%] max-w-full lg:max-w-[44.3%] lg:pr-[2.69rem]">
 					<div class="space-y-[1.91rem] lg:space-y-[2.41rem] pb-[2.6rem] lg:pb-0">
-						<div class="border-t border-solid border-purple pt-[1.48rem] text-2xl lg:text-[1.75rem] text-purple" data-aos="fade-up">
+						<div class="border-t border-solid border-purple pt-[1.48rem] text-xl lg:text-[1.75rem] text-purple" data-aos="fade-up">
 							<h6 class="text-lg lg:text-[1.31rem] font-semibold lg:font-medium leading-normal lg:leading-0 text-black-2">Contact info</h6>
 
 							<p>Engineering Tomorrow <br> Distribution Center <br> 79 Alexander Ave, Suite 31A <br> Bronx, NY 10454 <br> <a class="transition-opacity duration-500 hover:opacity-80" href="tel:9173344126">(917) 334-4126</a></p>

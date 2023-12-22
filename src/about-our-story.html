@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
 	{{> header }}
 	
 	<div class="">
@@ -82,7 +83,7 @@
 
 	<section class="pt-[0.8rem] md:pt-10 pb-6">
 		<div class="container max-w-[74.5rem]">
-			<div class="border border-solid border-purple rounded-lg overflow-hidden">
+			<div class="border border-solid border-purple rounded-lg overflow-hidden bg-white">
 				<div class="flex flex-wrap -mx-[10px]">
 					<div class="basis-full md:basis-1/2 max-w-full md:max-w-1/2 p-[10px] border-r border-solid border-purple">
 						<div class="flex flex-col justify-center space-y-[0.9rem] md:space-y-[1.6rem] pt-[1.9rem] pb-0 md:py-[1.9rem] px-[15px] md:pl-[3.13rem] md:pr-[3.63rem] min-h-full leading-[1.3] md:leading-normal" data-aos="fade-up">
@@ -94,7 +95,7 @@
 					
 					<div class="basis-full md:basis-1/2 max-w-full md:max-w-1/2 p-[10px]">
 						<div class="flex flex-col items-center justify-center px-[15px] md:pl-0 md:pr-[10px] pt-4 pb-[2.1rem] md:py-[1.9rem] min-h-full" data-aos="fade-up">
-							<picture class="text-center shadow-lg">
+							<picture class="text-center">
 								<img src="assets/images/temp/media-24.jpg" alt="">
 							</picture>
 						</div>
@@ -105,7 +106,7 @@
 					<div class="text-center pt-[2.25rem] md:pt-[3.25rem] pb-[1.73rem] md:pb-[1.93rem] px-[11px] md:px-14 space-y-[0.7rem] md:space-y-6" data-aos="fade-up">
 						<h6 class="font-mono text-purple text-md md:text-normal leading-none uppercase tracking-wider">Our objectives</h6>
 
-						<div class="flex flex-wrap -m-[15px] text-md text-lg leading-[1.28] md:leading-normal">
+						<div class="flex flex-wrap -m-[15px] text-lg leading-[1.28] md:leading-normal">
 							<div class="basis-full md:basis-1/3 max-w-full md:max-w-1/3 p-[15px] space-y-[15px]">
 								<span class="inline-flex items-center justify-center rounded-full w-[41px] h-[41px] text-2xl text-white text-center font-semibold bg-blue">1</span>
 
@@ -180,7 +181,7 @@
 							
 							<div class="basis-full md:basis-1/2 max-w-full md:max-w-1/2 px-[19px] order-first md:order-last">
 								<div class="mb-6 md:mb-0 md:pl-2">
-									<picture class="block shadow-lg">
+									<picture class="block shadow-lg relative z-2">
 										<img class="w-full h-auto" src="assets/images/temp/media-25.jpg" alt="">
 									</picture>
 

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
 	{{> header }}
 	
 	<div class="">
@@ -56,7 +57,7 @@
 
 	<section class="pt-[1.36rem] lg:pt-[1.66rem] pb-[1.13rem] lg:pb-8">
 		<div class="container">
-			 <div class="block lg:flex flex-wrap max-w-[71.4rem] mx-auto border lg:bg-white border-purple rounded-lg">
+			 <div class="block lg:flex flex-wrap max-w-[71.4rem] mx-auto border bg-white border-purple rounded-lg">
 				<div class="relative flex-1/2 lg:max-w-1/2 lg:border-r border-purple pt-[3.86rem] md:pt-[4.96rem] pl-4 pr-[1.67rem] lg:pb-[1.65rem]" data-aos="fade-up">
 					<div class="absolute -top-2 md:-top-[1.5rem] left-[11.1%] md:left-[5.7rem] w-60 shadow-md border border-black-2 bg-white text-black text-normal leading-none font-mono py-[0.86rem] px-[0.81rem] scale-[0.58] md:scale-100 z-1">
 						<h6 class="uppercase font-medium tracking-wider mb-[0.45rem]">Lesson objectives</h6>

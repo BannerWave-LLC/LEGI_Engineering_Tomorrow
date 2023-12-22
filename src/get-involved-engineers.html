@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
 	{{> header }}
 	
 	<div class="">
@@ -60,7 +61,7 @@
 
 	<section class="pt-[4.26rem] lg:pt-[1.96rem] pb-[2.03rem] lg:pb-8">
 		<div class="container">
-			 <div class="block lg:flex flex-wrap max-w-[71.4rem] mx-auto border lg:bg-white border-purple rounded-lg">
+			 <div class="block lg:flex flex-wrap max-w-[71.4rem] mx-auto border bg-white border-purple rounded-lg">
 				<div class="relative flex-1/2 lg:max-w-1/2 lg:border-r border-purple pt-[3.86rem] md:pt-[4.96rem] pl-4 pr-[1.67rem] lg:pb-[2.15rem]" data-aos="fade-up">
 					<div class="relative mb-[0.5rem] -right-[2.1rem] md:right-auto">
 						<div class="relative -left-[1.2rem] lg:-left-[1.9rem] -top-[2.1rem] lg:top-0 -mt-[3.9rem] lg:-mt-[6.5rem] -mr-[1.4rem] lg:mr-0 shadow-s pointer-events-none" data-aos="fade-up">
@@ -144,7 +145,7 @@
 									</div>
 								</li>
 								
-								<li class="border-b last:border-b-0 border-solid border-purple pb-[1.78rem] last:pb-0 first:pt-0 pt-5" data-aos="fade-up">
+								<li class="border-b last:border-b-0 border-solid border-purple pb-[1.78rem] last:pb-0 first:pt-0 pt-5 max-[767px]:last:pb-[15px] " data-aos="fade-up">
 									<div class="md:flex lg:-mx-[10px]">
 										<div class="md:basis-[105px] max-w-[60px] md:max-w-[105px] lg:px-[10px] mb-[5px] md:mb-0">
 											<picture>

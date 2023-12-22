@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
+
 	{{> header }}
 
 	<div class="bg-black-2 lg:bg-transparent">
@@ -48,7 +50,7 @@
 
 	<section class="pt-[3.06rem] lg:pt-[9.56rem] pb-[2.63rem] lg:pb-[8rem]">
 		<div class="container">
-			 <div class="block lg:flex max-w-[71.4rem] mx-auto border lg:bg-white border-purple rounded-lg">
+			 <div class="block lg:flex max-w-[71.4rem] mx-auto border bg-white border-purple rounded-lg">
 				<div class="relative flex-1/2 lg:max-w-1/2 lg:border-r border-purple pt-[3.46rem] md:pt-[6.56rem] pl-4 pr-[1.67rem] lg:pb-[2.65rem]" data-aos="fade-up">
 					<div class="absolute -top-[2.6rem] md:-top-[1.5rem] left-[11.1%] md:left-[5.7rem] w-60 shadow-md border border-black-2 bg-white text-black text-normal leading-none font-mono py-[0.86rem] px-[0.81rem] scale-[0.58] md:scale-100">
 						<h6 class="uppercase font-medium tracking-wider mb-[0.45rem]">Lesson objectives</h6>
@@ -185,7 +187,7 @@
 
 	<section class="pt-[5.56rem] md:pt-[9.56rem] pb-[2.75rem] lg:pb-[11.25rem]">
 		<div class="container">
-			<div class="lg:flex max-w-[71.4rem] mx-auto border lg:bg-white border-purple rounded-lg p-[15px] pr-[9px] md:pr-[15px] lg:py-0" data-aos="fade-up">
+			<div class="lg:flex max-w-[71.4rem] mx-auto border bg-white border-purple rounded-lg p-[15px] pr-[9px] md:pr-[15px] lg:py-0" data-aos="fade-up">
 				<div class="relative flex-1/2 lg:max-w-1/2 lg:border-r border-purple pl-[5.59rem] md:pl-[6.59rem] md:pr-[2.77rem] md:pb-[2.65rem]">
 					<picture class="block lg:drop-shadow-lg -mt-[4.46rem] md:-mt-[5.86rem] max-w-[20.5rem] lg:max-w-none ml-auto lg:ml-0">
 						<img src="assets/images/temp/media-1.jpg" alt="">
@@ -267,7 +269,7 @@
 				<div class="lg:w-1/3 lg:max-w-1/3 lg:flex-1/3 p-[7px] lg:p-2.5 hidden lg:block js-masonry-item" data-aos="fade-up">
 					<div class="rounded-lg overflow-hidden leading-lg">
 						<div class="relative block pb-[100%] overflow-hidden">
-							<div class="absolute top-0 left-0 w-full h-full pointer-events-none js-media">
+							<div class="absolute top-0 left-0 w-full h-full pointer-events-none js-media group">
 								<div class="js-media-wrapper" data-autoplay="false" data-background="true">
 									<!-- <video class="js-media-video" playsinline>
 										<source src="assets/videos/card-1.mp4" type="video/mp4" />
@@ -282,9 +284,11 @@
 									<img src="assets/images/temp/cover-2.jpg" alt="">
 								</picture>
 
-								<a href="#" class="inline-block absolute top-2 right-[0.4rem] z-1 pointer-events-auto js-media-play">
+								<a href="#" class="btn-ico inline-block absolute top-2 right-[0.4rem] z-1 group-hover:opacity-60">
 									<img src="assets/images/temp/ico-play-small.svg" alt="">
 								</a>
+								
+								<a href="#" class="absolute top-0 left-0 w-full h-full pointer-events-auto js-media-play"></a>
 							</div>
 						</div>
 
@@ -299,24 +303,26 @@
 				<div class="lg:w-1/3 lg:max-w-1/3 lg:flex-1/3 p-[7px] lg:p-2.5 hidden lg:block lg:pt-[9.5%] js-masonry-item" data-aos="fade-up">
 					<div class="rounded-lg overflow-hidden leading-lg">
 						<div class="relative block pb-[100%] overflow-hidden">
-							<div class="absolute top-0 left-0 w-full h-full pointer-events-none js-media">
+							<div class="absolute top-0 left-0 w-full h-full pointer-events-none js-media group">
 								<div class="js-media-wrapper" data-autoplay="false" data-background="true">
 									<!-- <video class="js-media-video" playsinline>
 										<source src="assets/videos/card-1.mp4" type="video/mp4" />
 									</video> -->
 								
-									<!-- <div class="js-media-video" data-plyr-provider="vimeo" data-plyr-embed-id="100902001"></div> -->
+									<div class="js-media-video" data-plyr-provider="vimeo" data-plyr-embed-id="100902001"></div>
 								
-									<div class="js-media-video" data-plyr-provider="youtube" data-plyr-embed-id="MLpWrANjFbI"></div>
+									<!-- <div class="js-media-video" data-plyr-provider="youtube" data-plyr-embed-id="MLpWrANjFbI"></div> -->
 								</div>
 
 								<picture class="js-media-cover">
 									<img src="assets/images/temp/cover-3.jpg" alt="">
 								</picture>
 
-								<a href="#" class="inline-block absolute top-2 right-[0.4rem] z-1 pointer-events-auto js-media-play">
+								<a href="#" class="btn-ico inline-block absolute top-2 right-[0.4rem] z-1 group-hover:opacity-60">
 									<img src="assets/images/temp/ico-play-small.svg" alt="">
 								</a>
+								
+								<a href="#" class="absolute top-0 left-0 w-full h-full pointer-events-auto js-media-play"></a>
 							</div>
 						</div>
 
@@ -331,7 +337,7 @@
 				<div class="lg:w-1/3 lg:max-w-1/3 lg:flex-1/3 p-[7px] lg:p-2.5 hidden lg:block lg:pt-[5.6%] js-masonry-item" data-aos="fade-up">
 					<div class="rounded-lg overflow-hidden leading-lg">
 						<div class="relative block pb-[100%] overflow-hidden">
-							<div class="absolute top-0 left-0 w-full h-full pointer-events-none js-media">
+							<div class="absolute top-0 left-0 w-full h-full pointer-events-none js-media group">
 								<div class="js-media-wrapper" data-autoplay="false" data-background="true">
 									<!-- <video class="js-media-video" playsinline>
 										<source src="assets/videos/card-1.mp4" type="video/mp4" />
@@ -346,9 +352,11 @@
 									<img src="assets/images/temp/cover-4.jpg" alt="">
 								</picture>
 
-								<a href="#" class="inline-block absolute top-2 right-[0.4rem] z-1 pointer-events-auto js-media-play">
+								<a href="#" class="btn-ico inline-block absolute top-2 right-[0.4rem] z-1 group-hover:opacity-60">
 									<img src="assets/images/temp/ico-play-small.svg" alt="">
 								</a>
+								
+								<a href="#" class="absolute top-0 left-0 w-full h-full pointer-events-auto js-media-play"></a>
 							</div>
 						</div>
 
@@ -525,7 +533,7 @@
 
 	<section class="pt-[3.19rem] lg:pt-[6.44rem] pb-[2.69rem] lg:pb-[7.25rem]">
 		<div class="container max-w-[74.5rem]">
-			<div class="lg:flex max-w-[71.4rem] mx-auto border lg:bg-white border-purple rounded-lg">
+			<div class="lg:flex max-w-[71.4rem] mx-auto border bg-white border-purple rounded-lg">
 				<div class="relative lg:flex-1/2 lg:max-w-1/2 lg:border-r border-purple pt-[0.9rem] md:pt-5 px-[15px] md:px-[1.31rem] pb-[1.25rem] md:pb-[3.75rem]">
 					<figure class="relative mb-[1.79rem] md:mb-[2.69rem]" data-aos="fade-up">
 						<picture class="block shadow-md">

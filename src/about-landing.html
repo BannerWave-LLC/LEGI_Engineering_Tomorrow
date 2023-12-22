@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head }}
-<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-[''] after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60">
+<body class="[&.nav-open]:overflow-hidden lg:[&.nav-open]:overflow-auto bg-repeat bg-fixed bg-page-pattern lg:after:!hidden after:fixed after:left-0 after:top-0 after:h-full after:w-full after:content-['']  after:pointer-events-none after:opacity-0 after:bg-black after:transition-opacity after:duration-500 after:z-10 [&.nav-open]:after:opacity-60 max-[768px]:bg-[length:0px_0px]">
+	<div class="bg-repeat bg-fixed bg-page-pattern fixed top-0 left-0 w-full h-full md:hidden -z-1"></div>
 	{{> header }}
 	
 	<div class="">
@@ -38,7 +39,7 @@
 
 	<section class="pt-[3.66rem] lg:pt-[7.56rem] pb-8">
 		<div class="container max-w-[71.3rem]">
-			<div class="flex flex-wrap lg:-mx-[25px] border border-solid border-purple rounded-lg overflow-hidden">
+			<div class="flex flex-wrap lg:-mx-[25px] border border-solid border-purple rounded-lg overflow-hidden bg-white">
 				<div class="basis-full lg:basis-1/2 max-w-full lg:max-w-1/2 px-[25px] lg:border-r border-solid border-purple">
 					<div class="flex items-center justify-center min-h-full py-[3.5rem] px-[7px]">
 						<picture>
